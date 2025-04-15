@@ -229,7 +229,7 @@ return {
 			--    https://github.com/pmizio/typescript-tools.nvim
 			--
 			-- But for many setups, the LSP (`ts_ls`) will work just fine
-			-- ts_ls = {},
+			ts_ls = {},
 			--
 			html = { filetypes = { "html", "twig", "hbs" } },
 			cssls = {},
@@ -285,7 +285,7 @@ return {
 					server.capabilities = vim.tbl_deep_extend("force", {}, capabilities, server.capabilities or {})
 					require("lspconfig")[server_name].setup(server)
 				end,
-			},
+			}
 		})
-	end,
+	end
 }
