@@ -4,7 +4,7 @@ vim.o.softtabstop = 2
 vim.o.expandtab = true
 
 vim.o.autoindent = true
-vim.o.smartindent = true
+--vim.o.smartindent = true
 
 -- vim.o.relativenumber = true
 vim.o.number = true
