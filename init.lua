@@ -10,5 +10,6 @@ end ---@diagnostic disable-next-line: undefined-field
 vim.opt.rtp:prepend(lazypath)
 
 require("core.vim-options")
+require("core.keymaps")
 require("lazy").setup("plugins")
 

@@ -6,7 +6,6 @@ vim.o.expandtab = true
 vim.o.autoindent = true
 vim.o.smartindent = true
 
-vim.g.mapleader = " "
 -- vim.o.relativenumber = true
 vim.o.number = true
 
@@ -24,19 +23,6 @@ vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
 
 -- Show which line your cursor is on
 vim.opt.cursorline = true
-
--- Clear highlights on search when pressing <Esc> in normal mode
---  See `:help hlsearch`
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>')
-
--- Keybinds to make split navigation easier.
---  Use CTRL+<hjkl> to switch between windows
---
---  See `:help wincmd` for a list of all window commands
-vim.keymap.set('n', '<C-h>', '<C-w><C-h>', { desc = 'Move focus to the left window' })
-vim.keymap.set('n', '<C-l>', '<C-w><C-l>', { desc = 'Move focus to the right window' })
-vim.keymap.set('n', '<C-j>', '<C-w><C-j>', { desc = 'Move focus to the lower window' })
-vim.keymap.set('n', '<C-k>', '<C-w><C-k>', { desc = 'Move focus to the upper window' })
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
