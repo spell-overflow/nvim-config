@@ -49,3 +49,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
 
 -- set true color support
 vim.opt.termguicolors = true
+
+vim.o.ignorecase = true -- Case-insensitive searching UNLESS /C or capital in search (default: false)
+vim.o.smartcase = true -- smart case (default: false)
+
