@@ -41,3 +41,5 @@ vim.opt.termguicolors = true
 vim.o.ignorecase = true -- Case-insensitive searching UNLESS /C or capital in search (default: false)
 vim.o.smartcase = true -- smart case (default: false)
 
+-- Minimal number of lines to keep above and below cursor
+vim.opt.scrolloff = 5
