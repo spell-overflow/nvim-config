@@ -36,6 +36,7 @@ return {
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-nvim-lsp-signature-help',
       'petertriho/cmp-git',
+      'folke/noice.nvim',
     },
     config = function()
       -- See `:help cmp`
@@ -153,6 +154,16 @@ return {
             })[entry.source.name]
             return vim_item
           end,
+        },
+        window = {
+          completion = {
+            border = 'rounded',
+            winhighlight = 'Normal:NoicePopup,FloatBorder:NoicePopupBorder,CursorLine:NoicePopupmenuSelected,Search:None',
+          },
+          documentation = {
+            border = 'rounded',
+            winhighlight = 'Normal:NoicePopup,FloatBorder:NoicePopupBorder,CursorLine:NoicePopupmenuSelected,Search:None',
+          },
         },
       })
     end,
