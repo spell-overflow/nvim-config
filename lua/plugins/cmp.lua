@@ -35,6 +35,7 @@ return {
       'hrsh7th/cmp-nvim-lsp',
       'hrsh7th/cmp-path',
       'hrsh7th/cmp-nvim-lsp-signature-help',
+      'petertriho/cmp-git',
     },
     config = function()
       -- See `:help cmp`
@@ -140,7 +141,7 @@ return {
           { name = 'path' },
           { name = 'nvim_lsp_signature_help' },
         },
-        formating = {
+        formatting = {
           fields = { 'kind', 'abbr', 'menu' },
           format = function(entry, vim_item)
             vim_item.kind = string.format('%s', kind_icons[vim_item.kind])
