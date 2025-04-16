@@ -1,5 +1,13 @@
 return {
   'lewis6991/gitsigns.nvim',
+  config = function()
+    local gitsigns = require('gitsigns')
+    gitsigns.setup()
+    -- Toggles
+    vim.keymap.set('n', '<leader>tb', ':Gitsigns toggle_current_line_blame<CR>', { desc = 'Toggle git blame line' })
+    vim.keymap.set('n', '<leader>td', ':Gitsigns toggle_deleted<CR>', { desc = 'Toggle git deleted' })
+    vim.keymap.set('n', '<leader>tw', ':Gitsigns toggle_word_diff<CR>', { desc = 'Toggle git word diff' })
+  end,
   opts = {
     signs = {
       add = { text = '┃' },
@@ -25,7 +33,7 @@ return {
     watch_gitdir = { follow_files = true },
     auto_attach = true,
     attach_to_untracked = false,
-    current_line_blame = false, -- Toggle with `:Gitsigns toggle_current_line_blame`
+    current_line_blame = true, -- Toggle with `:Gitsigns toggle_current_line_blame`
     current_line_blame_opts = {
       virt_text = true,
       virt_text_pos = 'eol', -- 'eol' | 'overlay' | 'right_align'
