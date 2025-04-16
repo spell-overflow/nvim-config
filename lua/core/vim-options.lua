@@ -43,3 +43,6 @@ vim.o.smartcase = true -- smart case (default: false)
 
 -- Minimal number of lines to keep above and below cursor
 vim.opt.scrolloff = 5
+
+-- Conceallevel (for Obsidian)
+vim.opt.conceallevel = 1
