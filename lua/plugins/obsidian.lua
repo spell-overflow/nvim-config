@@ -129,9 +129,7 @@ return {
     --  * "prepend_note_path", e.g. '[[foo-bar.md|Foo Bar]]'
     --  * "use_path_only", e.g. '[[foo-bar.md]]'
     -- Or you can set it to a function that takes a table of options and returns a string, like this:
-    wiki_link_func = function(opts)
-      return require('obsidian.util').prepend_note_path(opts)
-    end,
+    wiki_link_func = 'prepend_note_path',
 
     -- Optional, customize how markdown links are formatted.
     markdown_link_func = function(opts)
