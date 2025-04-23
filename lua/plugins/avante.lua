@@ -5,7 +5,7 @@ return {
   opts = {
     -- add any opts here
     -- for example
-    provider = 'deepseek',
+    provider = 'openai',
     openai = {
       endpoint = 'https://api.openai.com/v1',
       model = 'gpt-4o', -- your desired model (or use gpt-4o, etc.)
@@ -13,29 +13,6 @@ return {
       temperature = 0,
       max_completion_tokens = 8192, -- Increase this to include reasoning tokens (for reasoning models)
       --reasoning_effort = "medium", -- low|medium|high, only used for reasoning models
-    },
-    deepseek = {
-      api_key = '',
-      endpoint = 'http://192.168.1.103:11434',
-      model = 'deepseek-coder-v2',
-      -- parse_curl_args = function(opts, code_opts)
-      --   return {
-      --     headers = {
-      --       ['Accept'] = 'application/json',
-      --       ['Content-Type'] = 'application/json',
-      --       ['x-api-key'] = 'deepseek',
-      --     },
-      --     body = {
-      --       model = opts.model,
-      --       messages = {}, -- Placeholder for messages, adjust as needed
-      --       max_tokens = 2048,
-      --       stream = true,
-      --     },
-      --   }
-      -- end,
-      parse_response_data = function(data_stream, event_state, opts)
-        require('avante.providers').openai.parse_response(data_stream, event_state, opts)
-      end,
     },
   },
   -- if you want to build from source then do `make BUILD_FROM_SOURCE=true`
