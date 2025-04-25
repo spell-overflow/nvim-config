@@ -1,8 +1,20 @@
 return {
   'folke/snacks.nvim',
+  ---@type snacks.Config
   opts = {
-    picker = {},
-    explorer = {},
+    picker = {
+      sources = {
+        explorer = {
+          -- your explorer picker configuration comes here
+          -- or leave it empty to use the default settings
+        },
+      },
+    },
+    explorer = {
+      -- your explorer configuration comes here
+      -- or leave it empty to use the default settings
+      -- refer to the configuration section below
+    },
   },
   keys = {
     -- Top Pickers & Explorer
@@ -75,7 +87,13 @@ return {
     --    { "<leader>sH", function() Snacks.picker.highlights() end, desc = "Highlights" },
     --    { "<leader>si", function() Snacks.picker.icons() end, desc = "Icons" },
     --    { "<leader>sj", function() Snacks.picker.jumps() end, desc = "Jumps" },
-    --    { "<leader>sk", function() Snacks.picker.keymaps() end, desc = "Keymaps" },
+    {
+      '<leader>sk',
+      function()
+        Snacks.picker.keymaps()
+      end,
+      desc = 'Keymaps',
+    },
     --    { "<leader>sl", function() Snacks.picker.loclist() end, desc = "Location List" },
     --    { "<leader>sm", function() Snacks.picker.marks() end, desc = "Marks" },
     --    { "<leader>sM", function() Snacks.picker.man() end, desc = "Man Pages" },
