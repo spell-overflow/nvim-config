@@ -91,9 +91,16 @@
 |  | `:IBLToggle`   | Toggle Indentation Lines |
 |  | `:IBLToggleScope`  | Toggle Indentation Lines Scope |
 
+### CodeCompanion
+| Shortcut     | Command     | Funktion           |
+| ------------ | ----------- | ------------------ |
+| <leader>aa | :CodeCompanionChat Toggle | Toggle Ai Window |
+| <leader>ca | :CodeCompanionActions | Open Companion Actions |
+| 'v', 'ga' | :CodeCompanionActions | Open Companion Actions |
+
 ## 📝 Hinweise
 
 - `<leader>` ist standardmäßig die Leertaste
 - `<C->` steht für die Strg/Control-Taste
 - `<S->` steht für die Shift-Taste
-
+- `<leader>sk` gibt mir ein telescope für die keymaps
