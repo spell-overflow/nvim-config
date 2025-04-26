@@ -37,6 +37,16 @@
 | ------------ | --------- | -------------- |
 | `<leader>lg` | `LazyGit` | LazyGit öffnen |
 
+### 💄 Conform
+| Shortcut     | Command        | Funktion        |
+| ------------ | -------------- | --------------  |
+| <leader>cF   | conform.format | Autoformat file |
+
+### 🌴 Undotree
+| Shortcut     | Command          | Funktion        |
+| ------------ | ---------------- | --------------  |
+| <leader>u    | Undotree require | Toggle Undotree |
+
 ## ⌨️ Allgemeine Vim-Keymaps
 
 ### Fenster-Management

@@ -71,14 +71,14 @@ return {
         action = function()
           return require('obsidian').util.gf_passthrough()
         end,
-        opts = { noremap = false, expr = true, buffer = true },
+        opts = { noremap = false, expr = true, buffer = true, desc = 'Go to file' },
       },
       -- Toggle check-boxes.
       ['<leader>ch'] = {
         action = function()
           return require('obsidian').util.toggle_checkbox()
         end,
-        opts = { buffer = true },
+        opts = { buffer = true, desc = 'Toggle checkbox' },
       },
       -- Smart action depending on context, either follow link or toggle checkbox.
       ['<cr>'] = {
