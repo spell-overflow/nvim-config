@@ -117,6 +117,13 @@
 | n    | "         |                       | Show list of registers         |
 | i    | <C-r>     |                       | Show list of registers         |
 
+### Illuminate
+| Shortcut  | Command               | Funktion                       |
+| --------- | --------------------- | ------------------------------ |
+| <a-n>     |                       | Next occurance of hovered word |
+| <a-p>     |                       | Prev occurance of hovered word |
+
+
 ## 📝 Hinweise
 
 - `<leader>` ist standardmäßig die Leertaste
