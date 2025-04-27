@@ -108,6 +108,15 @@
 | <leader>ca | :CodeCompanionActions | Open Companion Actions |
 | 'v', 'ga' | :CodeCompanionActions | Open Companion Actions |
 
+### Which-Key
+| Mode | Shortcut  | Command               | Funktion                       |
+| ---- | --------- | --------------------- | ------------------------------ |
+|      | <bs>      |                       | Go up one level                |
+| n    | '         |                       | Show list of marks             |
+| n    | `         |                       | Show list of marks             |
+| n    | "         |                       | Show list of registers         |
+| i    | <C-r>     |                       | Show list of registers         |
+
 ## 📝 Hinweise
 
 - `<leader>` ist standardmäßig die Leertaste
