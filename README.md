@@ -18,6 +18,10 @@
 | <Left>     | `:vertical resize -2`               | Shrink window horizontal       |                   |
 | <Right>    | `:vertical resize +2`               | Grow window horizontal         |                   |
 
+# ✏️ Edit
+| Shortcut   | Command                             | Funktion                       | 🔌 Plugin         |
+| ---------- | ----------------------------------- | ------------------------------ | ----------------- |
+| `grn`      |                                     | Rename Symbol                  | LSP               |
 # 🖥️ Terminal
 | Shortcut   | Command                             | Funktion                       | 🔌 Plugin         |
 | ---------- | ----------------------------------- | ------------------------------ | ----------------- |
