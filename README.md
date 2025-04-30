@@ -28,6 +28,9 @@
 | Shortcut   | Command                             | Funktion                       | 🔌 Plugin         |
 | ---------- | ----------------------------------- | ------------------------------ | ----------------- |
 | <leader>tb | `Gitsigns toggle_current_line_blame`| Toggle Git Lineblame           | GitSigns          |
+| <leader>ts | `Gitsigns toggle_signs`             | Toggle Gitsigns                | GitSigns          |
+| <leader>tl | `Gitsigns toggle_linehl`            | Toggle Git Line Highlights     | GitSigns          |
+| <leader>tn | `Gitsigns toggle_numhl`             | Toggle Git Number Highlights   | GitSigns          |
 | <leader>td | `Gitsigns toggle_deleted`           | Toggle Git deleted lines       | GitSigns          |
 | <leader>tw | `Gitsigns toggle_word_diff`         | Toggle Git Word-Diff           | GitSigns          |
 | <leader>lg | `LazyGit`                           | Open Lazygit                   | 🛏️ LazyGit        |
