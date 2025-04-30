@@ -59,6 +59,7 @@
 | ---------- | ----------------------------------- | ------------------------------ | ----------------- |
 | <leader>cF |                                     | Autoformat file                | conform           |
 | <leader>u  |                                     | Toggle Undotree                | 🌴 undotree       |
+| <leader>lw | `:set wrap!`                        | Toggle Linewrap                | Vim               |
 |            | `:IBLToggle`                        | Toggle Indentation Lines       | IndentBlankLine   |
 |            | `:IBLToggleScope`                   | Toggle Indentation Lines Scope | IndentBlankLine   |
 

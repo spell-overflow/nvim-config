@@ -6,6 +6,9 @@ vim.g.maplocalleader = ' '
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
 local opts = { noremap = true, silent = true } -- for conciseness
 
+-- Toggle line wrapping
+vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', { desc = 'Toggle linewrap' })
+
 --Window management
 vim.keymap.set('n', '<leader>v', '<C-w>v', { desc = 'Split window vertically' }) -- split window vertically
 vim.keymap.set('n', '<leader>h', '<C-w>s', { desc = 'Split windows horizontall' }) -- split windows horizontally

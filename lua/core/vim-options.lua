@@ -9,8 +9,18 @@ vim.o.autoindent = true
 -- vim.o.relativenumber = true
 vim.o.number = true
 
+-- Show which line your cursor is on
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = 'number'
+
 -- Don't show the mode, since it's already in the status line
 vim.opt.showmode = false
+
+-- Display lines as one long line (default: true)
+vim.o.wrap = false
+
+-- Companion to wrap, don't split words (default: false)
+vim.o.linebreak = true
 
 -- Save undo history
 vim.opt.undofile = true
@@ -20,9 +30,6 @@ vim.opt.undofile = true
 --  and `:help 'listchars'`
 vim.opt.list = true
 vim.opt.listchars = { tab = '» ', trail = '·', nbsp = '␣' }
-
--- Show which line your cursor is on
-vim.opt.cursorline = true
 
 -- Highlight when yanking (copying) text
 --  Try it with `yap` in normal mode
