@@ -57,6 +57,7 @@
 | <a-p>      |                                     | Prev occurance of hovered word | 🔦 illuminate     |
 | <leader>sk |                                     | Search for Keymaps             | 🔭 Telescope      |
 | m<sign>    |                                     | Set mark <sign>                | Vim              |
+| <leader>tt |                                     | Show Telescope Todos           | todo-comments     |
 
 # 💄 Change Appearance
 | Shortcut   | Command                             | Funktion                       | 🔌 Plugin         |
