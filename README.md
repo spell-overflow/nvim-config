@@ -21,7 +21,15 @@
 # ✏️ Edit
 | Shortcut   | Command                             | Funktion                       | 🔌 Plugin         |
 | ---------- | ----------------------------------- | ------------------------------ | ----------------- |
-| `grn`      |                                     | Rename Symbol                  | LSP               |
+| `grn`      |                                     | Rename symbol                  | LSP               |
+| `gnn`      |                                     | Select symbol (new node)       | Treesitter        |
+| `gri`      |                                     | Grow/increment symbol selection| Treesitter        |
+| `grs`      |                                     | Shrink symbol selection        | Treesitter        |
+| `grc`      |                                     | Select scope                   | Treesitter        |
+| 'v' `if/af`|                                     | Select inner/outer fn          | Treesitter        |
+| 'v' `ic/ac`|                                     | Select inner/outer class/type  | Treesitter        |
+| 'v' `as`   |                                     | Select language scope          | Treesitter        |
+
 # 🖥️ Terminal
 | Shortcut   | Command                             | Funktion                       | 🔌 Plugin         |
 | ---------- | ----------------------------------- | ------------------------------ | ----------------- |
@@ -44,7 +52,7 @@
 | ---------- | ----------------------------------- | ------------------------------ | ----------------- |
 | <C-p>`     |                                     | Find File                      | 🔭 Telescope      |
 | <leader>fg |                                     | Find text in files             | 🔭 Telescope      |
-| `grn`      |                                     | Rename Symbol                  | LSP               |
+| <leader>lg |                                     | Live grep                      | 🔭 Telescope      |
 | `gra`      |                                     | Run Codeactions                | LSP               |
 | `grr`      |                                     | Find references                | LSP               |
 | `gri`      |                                     | Find implementations           | LSP               |
