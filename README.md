@@ -41,38 +41,44 @@
 
 # 📦 Git
 
-| Shortcut   | Command                              | Funktion                     | 🔌 Plugin  |
-| ---------- | ------------------------------------ | ---------------------------- | ---------- |
-| <leader>tb | `Gitsigns toggle_current_line_blame` | Toggle Git Lineblame         | GitSigns   |
-| <leader>ts | `Gitsigns toggle_signs`              | Toggle Gitsigns              | GitSigns   |
-| <leader>tl | `Gitsigns toggle_linehl`             | Toggle Git Line Highlights   | GitSigns   |
-| <leader>tn | `Gitsigns toggle_numhl`              | Toggle Git Number Highlights | GitSigns   |
-| <leader>td | `Gitsigns toggle_deleted`            | Toggle Git deleted lines     | GitSigns   |
-| <leader>tw | `Gitsigns toggle_word_diff`          | Toggle Git Word-Diff         | GitSigns   |
-| <leader>dh | `Gitsigns diffthis`                  | [D]iff [h]unk                | GitSigns   |
-| <leader>lg | `LazyGit`                            | Open Lazygit                 | 🛏️ LazyGit |
+| Shortcut    | Command                              | Funktion                     | 🔌 Plugin  |
+| ----------- | ------------------------------------ | ---------------------------- | ---------- |
+| <leader>tb  | `Gitsigns toggle_current_line_blame` | Toggle Git Lineblame         | GitSigns   |
+| <leader>ts  | `Gitsigns toggle_signs`              | Toggle Gitsigns              | GitSigns   |
+| <leader>tl  | `Gitsigns toggle_linehl`             | Toggle Git Line Highlights   | GitSigns   |
+| <leader>tn  | `Gitsigns toggle_numhl`              | Toggle Git Number Highlights | GitSigns   |
+| <leader>td  | `Gitsigns toggle_deleted`            | Toggle Git deleted lines     | GitSigns   |
+| <leader>tw  | `Gitsigns toggle_word_diff`          | Toggle Git Word-Diff         | GitSigns   |
+| <leader>dh  | `Gitsigns diffthis`                  | [D]iff [h]unk                | GitSigns   |
+| <leader>lg  | `LazyGit`                            | Open Lazygit                 | 🛏️ LazyGit |
 
 # 🔍 Find Things
 
-| Shortcut   | Command | Funktion                       | 🔌 Plugin     |
-| ---------- | ------- | ------------------------------ | ------------- |
-| <C-p>      |         | Find File                      | 🔭 Telescope  |
-| <leader>fg |         | Find text in files             | 🔭 Telescope  |
-| <leader>lg |         | Live grep                      | 🔭 Telescope  |
-| `gra`      |         | Run Codeactions                | LSP           |
-| `grr`      |         | Find references                | LSP           |
-| `gri`      |         | Find implementations           | LSP           |
-| `grd`      |         | Go to Definition               | LSP           |
-| `grD`      |         | Go to declaration              | outcommented  |
-| `gO`       |         | Show document symbols          | LSP           |
-| `gW`       |         | Workspace-Symbole anzeigen     | LSP           |
-| `grt`      |         | Go to type definition          | LSP           |
-| <a-n>      |         | Next occurance of hovered word | 🔦 illuminate |
-| <a-p>      |         | Prev occurance of hovered word | 🔦 illuminate |
-| <leader>sk |         | Search for Keymaps             | 🔭 Telescope  |
-| m<sign>    |         | Set mark <sign>                | Vim           |
-| <S-k>      |         | Get LSP-Info of hovered word   | LSP           |
-| <leader>tt |         | Show Telescope Todos           | todo-comments |
+| Shortcut    | Command | Funktion                       | 🔌 Plugin     |
+| ----------- | ------- | ------------------------------ | ------------- |
+| <C-p>       |         | Find File                      | 🔭 Telescope  |
+| <leader>fg  |         | Find text in files             | 🔭 Telescope  |
+| <leader>lg  |         | Live grep                      | 🔭 Telescope  |
+| `gra`       |         | Run Codeactions                | LSP           |
+| `grr`       |         | Find references                | LSP           |
+| `gri`       |         | Find implementations           | LSP           |
+| `grd`       |         | Go to Definition               | LSP           |
+| `grD`       |         | Go to declaration              | outcommented  |
+| `gO`        |         | Show document symbols          | LSP           |
+| `gW`        |         | Workspace-Symbole anzeigen     | LSP           |
+| `grt`       |         | Go to type definition          | LSP           |
+| <a-n>       |         | Next occurance of hovered word | 🔦 illuminate |
+| <a-p>       |         | Prev occurance of hovered word | 🔦 illuminate |
+| <leader>sk  |         | Search for Keymaps             | 🔭 Telescope  |
+| m<sign>     |         | Set mark <sign>                | Vim           |
+| <S-k>       |         | Get LSP-Info of hovered word   | LSP           |
+| <leader>tt  |         | Show Telescope Todos           | todo-comments |
+| <leader>xx  |         | Toggle Diagnostics             | Trouble       |
+| <leader>xX  |         | Buffer Diagnostics             | Trouble       |
+| <leader>cs  |         | Symol Buffers                  | Trouble       |
+| <leader>cl  |         | LSP Definitions/references...  | Trouble       |
+| <leader>xL  |         | Location List                  | Trouble       |
+| <leader>xQ  |         | Quickfix List                  | Trouble       |
 
 # 💄 Change Appearance
 
