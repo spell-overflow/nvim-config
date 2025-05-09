@@ -22,7 +22,7 @@ return {
       },
       signs_staged_enable = true,
       signcolumn = true, -- Toggle with `:Gitsigns toggle_signs`
-      numhl = true, -- Toggle with `:Gitsigns toggle_numhl`
+      numhl = false, -- Toggle with `:Gitsigns toggle_numhl`
       linehl = false, -- Toggle with `:Gitsigns toggle_linehl`
       word_diff = false, -- Toggle with `:Gitsigns toggle_word_diff`
       watch_gitdir = { follow_files = true },
@@ -57,5 +57,6 @@ return {
     vim.keymap.set('n', '<leader>tl', gitsigns.toggle_linehl, { desc = '[T]oggle git [l]ine highlights' })
     vim.keymap.set('n', '<leader>tw', gitsigns.toggle_word_diff, { desc = '[T]oggle git [w]ord diff' })
     vim.keymap.set('n', '<leader>dh', gitsigns.diffthis, { desc = '[D]iff [h]unk' })
+    vim.keymap.set('n', '<leader>tn', gitsigns.toggle_numhl, { desc = '[T]oggle git [n]umber highlights' })
   end,
 }
