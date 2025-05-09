@@ -10,9 +10,9 @@ local opts = { noremap = true, silent = true } -- for conciseness
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', { desc = 'Toggle linewrap' })
 
 --Window management
-vim.keymap.set('n', '<leader>v', '<C-w>v', { desc = 'Split window vertically' }) -- split window vertically
-vim.keymap.set('n', '<leader>h', '<C-w>s', { desc = 'Split windows horizontall' }) -- split windows horizontally
-vim.keymap.set('n', '<leader>se', '<C-w>=', { desc = 'make split windows equal width & heigh' }) -- make split windows equal width & height
+vim.keymap.set('n', '<leader>v', '<C-w>v', { desc = 'Split window [v]ertically' }) -- split window vertically
+vim.keymap.set('n', '<leader>h', '<C-w>s', { desc = 'Split windows [h]orizontall' }) -- split windows horizontally
+vim.keymap.set('n', '<leader>se', '<C-w>=', { desc = 'make [s]plit windows [e]qual width & height' }) -- make split windows equal width & height
 vim.keymap.set('n', '<leader>xs', ':close<CR>', { desc = 'close current split windo' }) -- close current split window
 
 vim.keymap.set('n', '<Tab>', ':bnext<CR>', { desc = 'Move forward between buffers', noremap = true, silent = true })
@@ -23,7 +23,7 @@ vim.keymap.set(
   { desc = 'Move backwards between buffers', noremap = true, silent = true }
 )
 vim.keymap.set('n', '<leader>x', ':Bdelete!<CR>', { desc = 'Close buffer', noremap = true, silent = true })
-vim.keymap.set('n', '<leader>b', ':enew<CR>', { desc = 'New buffer', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>b', ':enew<CR>', { desc = 'New [b]uffer', noremap = true, silent = true })
 
 -- Keybinds to make split navigation easier.
 --  Use CTRL+<hjkl> to switch between windows
@@ -40,10 +40,10 @@ vim.keymap.set('n', '<Left>', ':vertical resize -2<CR>', { desc = 'Shrink curren
 vim.keymap.set('n', '<Right>', ':vertical resize +2<CR>', { desc = 'Expand current window width' })
 
 -- Tabs
-vim.keymap.set('n', '<leader>to', ':tabnew<CR>', { desc = 'open new tab' }) -- open new tab
-vim.keymap.set('n', '<leader>tx', ':tabclose<CR>', { desc = 'close current tab' }) -- close current tab
-vim.keymap.set('n', '<leader>tn', ':tabn<CR>', { desc = ' go to next tab' }) --  go to next tab
-vim.keymap.set('n', '<leader>tp', ':tabp<CR>', { desc = ' go to previous tab' }) --  go to previous tab
+-- vim.keymap.set('n', '<leader>to', ':tabnew<CR>', { desc = 'open new tab' }) -- open new tab
+-- vim.keymap.set('n', '<leader>tx', ':tabclose<CR>', { desc = 'close current tab' }) -- close current tab
+-- vim.keymap.set('n', '<leader>tn', ':tabn<CR>', { desc = ' go to next tab' }) --  go to next tab
+-- vim.keymap.set('n', '<leader>tp', ':tabp<CR>', { desc = ' go to previous tab' }) --  go to previous tab
 
 -- Stay in indent mode
 --vim.keymap.set('v', '<', '<gv', opts)
