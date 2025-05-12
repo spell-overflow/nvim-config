@@ -13,7 +13,7 @@ vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', { desc = 'Toggle linewra
 vim.keymap.set('n', '<leader>v', '<C-w>v', { desc = 'Split window [v]ertically' }) -- split window vertically
 vim.keymap.set('n', '<leader>h', '<C-w>s', { desc = 'Split windows [h]orizontall' }) -- split windows horizontally
 vim.keymap.set('n', '<leader>se', '<C-w>=', { desc = 'make [s]plit windows [e]qual width & height' }) -- make split windows equal width & height
-vim.keymap.set('n', '<leader>xs', ':close<CR>', { desc = 'close current split windo' }) -- close current split window
+vim.keymap.set('n', '<leader>xs', ':close<CR>', { desc = 'close current split window' }) -- close current split window
 
 vim.keymap.set('n', '<Tab>', ':bnext<CR>', { desc = 'Move forward between buffers', noremap = true, silent = true })
 vim.keymap.set(
@@ -22,7 +22,7 @@ vim.keymap.set(
   ':bprevious<CR>',
   { desc = 'Move backwards between buffers', noremap = true, silent = true }
 )
-vim.keymap.set('n', '<leader>x', ':Bdelete!<CR>', { desc = 'Close buffer', noremap = true, silent = true })
+vim.keymap.set('n', '<leader>x', ':bdelete!<CR>', { desc = 'Close buffer', noremap = true, silent = true })
 vim.keymap.set('n', '<leader>b', ':enew<CR>', { desc = 'New [b]uffer', noremap = true, silent = true })
 
 -- Keybinds to make split navigation easier.
