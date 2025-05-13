@@ -1,6 +1,6 @@
 --set leader key
 vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
+vim.g.maplocalleader = ','
 
 --Disable spacebars default behavior in normal and visual mode
 vim.keymap.set({ 'n', 'v' }, '<Space>', '<Nop>', { silent = true })
@@ -73,7 +73,7 @@ vim.keymap.set(
   { desc = 'Toggle Companion Chat', noremap = true, silent = true }
 )
 vim.keymap.set(
-  'v',
+  { 'v', 'n' },
   'ga',
   '<cmd>CodeCompanionChat Add<cr>',
   { desc = 'Add visual-mode to Companion Chat', noremap = true, silent = true }

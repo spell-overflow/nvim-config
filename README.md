@@ -91,14 +91,17 @@
 |            | `:IBLToggleScope` | Toggle Indentation Lines Scope | IndentBlankLine |
 
 # ✨ Ai
+Self-update references, they can be pinned (for files and buffers) or watched (for buffers).
 
 | Shortcut   | Command                     | Funktion               | 🔌 Plugin        |
 | ---------- | --------------------------- | ---------------------- | ---------------- |
 | <leader>aa | `:CodeCompanionChat Toggle` | Toggle Ai Window       | 👫 CodeCompanion |
 | <leader>ca | `:CodeCompanionActions `    | Open Companion Actions | 👫 CodeCompanion |
-| 'v' `ga`   | `:CodeCompanionActions`     | Open Companion Actions | 👫 CodeCompanion |
-| 'n' `ga`   |                             | Change Modell          | 👫 CodeCompanion |
-| 'n' `gx`   |                             | Clear Chat             | 👫 CodeCompanion |
+| 'v' `ga`   |                             | Add Selection to chat  | 👫 CodeCompanion |
+| 'n' `ga`   | Nur im Chat!                | Change Modell          | 👫 CodeCompanion |
+| 'n' `gx`   | Nur im Chat!                | Clear Chat             | 👫 CodeCompanion |
+| 'n' `gh`   | Nur im Chat!                | Open Chat History      | 👫 CodeCompanion |
+| <C-.>      |                             | Get AI Autocompletions | 👫 CodeCompanion |
 
 # 🆘 Get Help
 
