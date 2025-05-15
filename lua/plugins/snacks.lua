@@ -7,6 +7,7 @@ return {
         explorer = {
           hidden = true,
           ignored = true,
+          exclude = { 'node_modules', '.gitlab', '.next', '.pnpm-store', '.trigger', 'db.sqlite' },
           -- your explorer picker configuration comes here
           -- or leave it empty to use the default settings
         },
