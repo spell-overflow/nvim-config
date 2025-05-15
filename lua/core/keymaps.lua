@@ -9,6 +9,11 @@ local opts = { noremap = true, silent = true } -- for conciseness
 -- Toggle line wrapping
 vim.keymap.set('n', '<leader>lw', '<cmd>set wrap!<CR>', { desc = 'Toggle linewrap' })
 
+-- Toggle line numbers
+vim.keymap.set('n', '<leader>ln', function()
+  vim.wo.relativenumber = not vim.wo.relativenumber
+end, { desc = 'Toggle relative [l]ine [n]umbers' })
+
 --Window management
 vim.keymap.set('n', '<leader>v', '<C-w>v', { desc = 'Split window [v]ertically' }) -- split window vertically
 vim.keymap.set('n', '<leader>h', '<C-w>s', { desc = 'Split windows [h]orizontall' }) -- split windows horizontally

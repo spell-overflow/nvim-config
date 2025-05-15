@@ -89,6 +89,7 @@
 | <leader>lw | `:set wrap!`      | Toggle Linewrap                | Vim             |
 |            | `:IBLToggle`      | Toggle Indentation Lines       | IndentBlankLine |
 |            | `:IBLToggleScope` | Toggle Indentation Lines Scope | IndentBlankLine |
+| <leader>ln |                   | Toggle relative line numbers   | Vim             |
 
 # ✨ Ai
 Self-update references, they can be pinned (for files and buffers) or watched (for buffers).
