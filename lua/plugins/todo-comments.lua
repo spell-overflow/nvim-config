@@ -68,7 +68,7 @@ return {
       -- pattern = [[\b(KEYWORDS)\b]], -- match without the extra colon. You'll likely get false positives
     },
     keymaps = {
-      vim.keymap.set('n', '<leader>tt', '<cmd>TodoTelescope<cr>', { desc = 'Telescope Todos' }),
+      vim.keymap.set('n', '<leader>tt', '<cmd>TodoTelescope<cr>', { desc = '[T]elescope [T]odos' }),
     },
   },
 }
