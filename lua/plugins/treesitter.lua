@@ -6,7 +6,7 @@ return {
     dependencies = {
       'nvim-treesitter/nvim-treesitter-textobjects', -- Additional textobjects via treesitter
       -- 'JoosepAlviste/nvim-ts-context-commentstring', -- Context aware comments
-      -- 'nvim-treesitter/nvim-treesitter-context', -- Show context of current node
+      'nvim-treesitter/nvim-treesitter-context', -- Show context of current node
     },
     -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
     opts = {
