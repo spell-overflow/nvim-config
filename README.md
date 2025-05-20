@@ -51,6 +51,8 @@
 | <leader>tw  | `Gitsigns toggle_word_diff`          | Toggle Git Word-Diff         | GitSigns   |
 | <leader>dh  | `Gitsigns diffthis`                  | [D]iff [h]unk                | GitSigns   |
 | <leader>lg  | `LazyGit`                            | Open Lazygit                 | 🛏️ LazyGit |
+| <leader>ggd |                                      | Open Git Diff in telescope   | Snacks     |
+| <leader>gb  |                                      | Open Git Branches telescope  | Snacks     |
 
 # 🔍 Find Things
 
@@ -79,6 +81,8 @@
 | <leader>cl  |         | LSP Definitions/references...  | Trouble       |
 | <leader>xL  |         | Location List                  | Trouble       |
 | <leader>xQ  |         | Quickfix List                  | Trouble       |
+| <leader>gb  |         | Quickfix List                  | Trouble       |
+| <leader>s"  |         | Telescope Registers            | Trouble       |
 
 # 💄 Change Appearance
 
