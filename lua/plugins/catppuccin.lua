@@ -11,6 +11,11 @@ return {
         mason = true,
         noice = true,
         which_key = true,
+        gitsigns = true,
+        notify = true,
+        snacks = {
+          enabled = true,
+        },
       },
       flavour = 'mocha',
       --      flavour = "auto"
