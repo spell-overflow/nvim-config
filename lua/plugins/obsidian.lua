@@ -1,5 +1,6 @@
 return {
   'obsidian-nvim/obsidian.nvim',
+  -- 'epwalsh/obsidian.nvim',
   version = '*', -- recommended, use latest release instead of latest commit
   lazy = true,
   ft = 'markdown',
@@ -14,6 +15,8 @@ return {
   dependencies = {
     -- Required.
     'nvim-lua/plenary.nvim',
+    'hrsh7th/nvim-cmp',
+    'nvim-treesitter/nvim-treesitter',
 
     -- see below for full list of optional dependencies 👇
   },
