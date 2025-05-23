@@ -33,7 +33,24 @@ return {
         injected_languages = true,
         priority = 500,
       },
+      exclude = {
+        buftypes = {
+          'dashboard',
+        },
+      },
     }
   end,
-}
+  config = function(_, opts)
+    local ibl = require('ibl')
+    ibl.setup(opts)
 
+    vim.api.nvim_create_autocmd('FileType', {
+      pattern = 'dashboard',
+      callback = function(event)
+        vim.schedule(function()
+          require('ibl').setup_buffer(event.buf, { enabled = false })
+        end)
+      end,
+    })
+  end,
+}

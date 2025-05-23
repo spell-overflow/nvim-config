@@ -65,7 +65,7 @@ return {
         icons_enabled = true,
         section_separators = { left = '', right = '' },
         component_separators = { left = '', right = '' },
-        disabled_filetypes = { 'alpha', 'neo-tree', 'explorer' },
+        disabled_filetypes = { 'neo-tree', 'explorer', 'dashboard' },
         always_divide_middle = true,
         globalstatus = true,
       },

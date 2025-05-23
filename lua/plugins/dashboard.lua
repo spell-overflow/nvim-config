@@ -1,71 +1,74 @@
 return {
-  --   'nvimdev/dashboard-nvim',
-  --   event = 'VimEnter',
-  --   config = function()
-  --     local inspire = require('inspire')
-  --     local quote = inspire.get_quote()
-  --     local centered_quote = inspire.center_text(quote.text, quote.author, 52, 8, 52)
-  --
-  --     require('dashboard').setup({
-  --       theme = 'doom',
-  --       config = {
-  --         header = {
-  --           '',
-  --           '                        .88888888:.                          ',
-  --           '                       88888888.88888.                       ',
-  --           '                     .8888888888888888.                      ',
-  --           '                     888888888888888888                      ',
-  --           "                     88' _`88'_  `88888                      ",
-  --           '                     88 88 88 88  88888                      ',
-  --           '                     88_88_::_88_:88888                      ',
-  --           '                     88:::,::,:::::8888                      ',
-  --           "                     88`:::::::::'`8888                      ",
-  --           "                    .88  `::::'    8:88.                     ",
-  --           '                   8888            `8:888.                   ',
-  --           "                 .8888'             `888888.                 ",
-  --           "                .8888:..  .::.  ...:'8888888:.               ",
-  --           "               .8888.'     :'     `'::`88:88888              ",
-  --           "              .8888        '         `.888:8888.             ",
-  --           '             888:8         .           888:88888             ',
-  --           '           .888:88        .:           888:88888:            ',
-  --           '           8888888.       ::           88:888888             ',
-  --           '           `.::.888.      ::          .88888888              ',
-  --           "          .::::::.888.    ::         :::`8888'.:.            ",
-  --           "         ::::::::::.888   '         .::::::::::::            ",
-  --           "         ::::::::::::.8    '      .:8::::::::::::.           ",
-  --           '        .::::::::::::::.        .:888:::::::::::::           ',
-  --           "        :::::::::::::::88:.__..:88888:::::::::::'            ",
-  --           "         `'.:::::::::::88888888888.88:::::::::'              ",
-  --           "               `':::_:' -- '' -'-' `':_::::'`                ",
-  --           '',
-  --           require('inspire').centered_quote(), -- Fügt das zentrierte Zitat zum Header hinzu
-  --         },
-  --         center = {
-  --           icon = ' ',
-  --           icon_hl = 'Title',
-  --           desc = 'Find File           ',
-  --           desc_hl = 'String',
-  --           key = 'b',
-  --           keymap = 'SPC f f',
-  --           key_hl = 'Number',
-  --           key_format = ' %s', -- remove default surrounding `[]`
-  --           action = 'lua print(2)',
-  --         },
-  --         {
-  --           icon = ' ',
-  --           desc = 'Find Dotfiles',
-  --           key = 'f',
-  --           keymap = 'SPC f d',
-  --           key_format = ' %s', -- remove default surrounding `[]`
-  --           action = 'lua print(3)',
-  --         },
-  --         footer = {},
-  --         vertical_center = true, -- Center the Dashboard on the vertical (from top to bottom)
-  --       },
-  --     })
-  --   end,
-  --   dependencies = {
-  --     { 'nvim-tree/nvim-web-devicons' },
-  --     { 'RileyGabrielson/inspire.nvim' },
-  --   },
+  'nvimdev/dashboard-nvim',
+  event = 'VimEnter',
+  dependencies = {
+    'nvim-tree/nvim-web-devicons',
+    {
+      'RileyGabrielson/inspire.nvim',
+      name = 'inspire',
+      lazy = false,
+    },
+  },
+  config = function()
+    local dashboard = require('dashboard')
+    local inspire = require('inspire')
+
+    local header = {
+      '                                                     ',
+      '  ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ',
+      '  ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ',
+      '  ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ',
+      '  ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ',
+      '  ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ',
+      '  ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ',
+      '                                                     ',
+    }
+
+    local quote = inspire.get_quote()
+    local centered = inspire.center_text(quote.text, quote.author, 52, 8, 52)
+
+    for _, line in ipairs(centered) do
+      table.insert(header, line)
+    end
+
+    dashboard.setup({
+      theme = 'hyper',
+      config = {
+        header = header,
+        week_header = {
+          enable = false,
+        },
+        shortcut = {
+          {
+            icon = ' ',
+            desc = 'New File',
+            group = 'DiagnosticHint',
+            action = 'ene | startinsert',
+            key = 'n',
+          },
+          {
+            icon = ' ',
+            desc = 'Find File',
+            group = '@property',
+            action = 'Telescope find_files',
+            key = 'f',
+          },
+          {
+            icon = ' ',
+            desc = 'Recent Files',
+            group = 'Label',
+            action = 'Telescope oldfiles',
+            key = 'o',
+          },
+          {
+            icon = '󰩈 ',
+            desc = 'Quit',
+            group = 'Exception',
+            action = 'qa',
+            key = 'q',
+          },
+        },
+      },
+    })
+  end,
 }
