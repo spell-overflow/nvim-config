@@ -1,23 +1,26 @@
 # Work with Buffers and Windows
 
-| Shortcut   | Command               | Funktion                 | 🔌 Plugin |
-| ---------- | --------------------- | ------------------------ | --------- |
-| <Tab>      | `:bnext`              | Go to next Buffer        |           |
-| <S-Tab>    | `:bprevious`          | Go to prev Buffer        |           |
-| <leader>x  | `:Bdelete!`           | Close Buffer             |           |
-| <leader>b  | `:enew`               | New Buffer               |           |
-| <leader>v  | <C-w>v `:split`       | Split window vertical    |           |
-| <leader>h  | <C-w>s `:vsplit`      | Split window horizontal  |           |
-| <leader>se | <C-w>=                | Fenstergrößen angleichen |           |
-| <leader>xs | `:close`              | Close curr window        |           |
-| <C-h>      | <C-w><C-h>            | Switch to left window    |           |
-| <C-l>      | <C-w><C-l>            | Switch to right window   |           |
-| <C-j>      | <C-w><C-j>            | Switch to window below   |           |
-| <C-k>      | <C-w><C-k>            | Switch to window above   |           |
-| <Up>       | `:resize -2`          | Shrink window            |           |
-| <Down>     | `:resize +2`          | Grow window              |           |
-| <Left>     | `:vertical resize -2` | Shrink window horizontal |           |
-| <Right>    | `:vertical resize +2` | Grow window horizontal   |           |
+| Shortcut   | Command               | Funktion                 | 🔌 Plugin   |
+| ---------- | --------------------- | ------------------------ | ----------- |
+| <Tab>      | `:bnext`              | Go to next Buffer        |             |
+| <S-Tab>    | `:bprevious`          | Go to prev Buffer        |             |
+| <leader>x  | `:Bdelete!`           | Close Buffer             |             |
+| <leader>b  | `:enew`               | New Buffer               |             |
+| <leader>v  | <C-w>v `:split`       | Split window vertical    |             |
+| <leader>h  | <C-w>s `:vsplit`      | Split window horizontal  |             |
+| <leader>se | <C-w>=                | Fenstergrößen angleichen |             |
+| <leader>xs | `:close`              | Close curr window        |             |
+| <C-h>      | <C-w><C-h>            | Switch to left window    |             |
+| <C-l>      | <C-w><C-l>            | Switch to right window   |             |
+| <C-j>      | <C-w><C-j>            | Switch to window below   |             |
+| <C-k>      | <C-w><C-k>            | Switch to window above   |             |
+| <Up>       | `:resize -2`          | Shrink window            |             |
+| <Down>     | `:resize +2`          | Grow window              |             |
+| <Left>     | `:vertical resize -2` | Shrink window horizontal |             |
+| <Right>    | `:vertical resize +2` | Grow window horizontal   |             |
+| <leader>qs |                       | load session for curr dir| Persistence |
+| <leader>qS |                       | select session to load   | Persistence |
+| <leader>ql |                       | load last session        | Persistence |
 
 # ✏️ Edit
 
