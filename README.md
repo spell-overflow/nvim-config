@@ -18,6 +18,9 @@
 | <Down>     | `:resize +2`          | Grow window              |           |
 | <Left>     | `:vertical resize -2` | Shrink window horizontal |           |
 | <Right>    | `:vertical resize +2` | Grow window horizontal   |           |
+| <leader>qs |                       | load session for curr dir| Persistence |
+| <leader>qS |                       | select session to load   | Persistence |
+| <leader>ql |                       | load last session        | Persistence |
 
 # ✏️ Edit
 
