@@ -5,9 +5,13 @@ return {
     -- Automatically install LSPs and related tools to stdpath for Neovim
     -- Mason must be loaded before its dependents so we need to set it up here.
     -- NOTE: `opts = {}` is the same as calling `require('mason').setup({})`
-    { 'mason-org/mason.nvim', opts = {} },
-    'mason-org/mason-lspconfig.nvim',
+    { 'williamboman/mason.nvim', opts = {} },
+    'williamboman/mason-lspconfig.nvim',
     'WhoIsSethDaniel/mason-tool-installer.nvim',
+    'jose-elias-alvarez/typescript.nvim',
+
+    -- Useful status updates for LSP.
+    { 'j-hui/fidget.nvim', opts = {} },
 
     -- Allows extra capabilities provided by nvim-cmp
     'hrsh7th/cmp-nvim-lsp',
@@ -196,31 +200,6 @@ return {
     --  - settings (table): Override the default settings passed when initializing the server.
     --        For example, to see the options for `lua_ls`, you could go to: https://luals.github.io/wiki/settings/
     local servers = {
-      ['eslint-lsp'] = {
-        filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' },
-        settings = {
-          typescript = {
-            validate = true,
-          },
-          typescriptreact = {
-            validate = true,
-          },
-          javascript = {
-            validate = true,
-          },
-          javascriptreact = {
-            validate = true,
-          },
-        },
-        on_attach = function(client, bufnr)
-          vim.api.nvim_create_autocmd('BufWritePre', {
-            buffer = bufnr,
-            callback = function()
-              vim.cmd('EslintFixAll')
-            end,
-          })
-        end,
-      },
       -- clangd = {},
       -- gopls = {},
       -- pyright = {},
@@ -229,8 +208,10 @@ return {
       --
       -- Some languages (like typescript) have entire language plugins that can be useful:
       --    https://github.com/pmizio/typescript-tools.nvim
+      --
       -- But for many setups, the LSP (`ts_ls`) will work just fine
-      -- ts_ls = {},
+      ts_ls = {},
+      --
       html = { filetypes = { 'html', 'twig', 'hbs' } },
       cssls = {},
       tailwindcss = {},
@@ -270,13 +251,12 @@ return {
     local ensure_installed = vim.tbl_keys(servers or {})
     vim.list_extend(ensure_installed, {
       'stylua', -- Used to format Lua code
-      'eslint-lsp', -- Used to format JavaScript code
     })
     require('mason-tool-installer').setup({ ensure_installed = ensure_installed })
 
     require('mason-lspconfig').setup({
       ensure_installed = {}, -- explicitly set to an empty table (Kickstart populates installs via mason-tool-installer)
-      automatic_installation = true,
+      automatic_installation = false,
       handlers = {
         function(server_name)
           local server = servers[server_name] or {}
