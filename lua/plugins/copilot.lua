@@ -1,5 +1,10 @@
 return {
   'github/copilot.vim',
+  enabled = function()
+    local cwd = vim.fn.getcwd()
+    vim.notify('CWD is: ' .. cwd)
+    return not cwd:match('/home/anneke/Obsidian/PKM')
+  end,
   config = function()
     vim.keymap.set('i', '<C-y>', 'copilot#Accept("\\<CR>")', {
       expr = true,

@@ -1,5 +1,10 @@
 return {
   'olimorris/codecompanion.nvim',
+  enabled = function()
+    local cwd = vim.fn.getcwd()
+    vim.notify('CWD is: ' .. cwd)
+    return not cwd:match('/home/anneke/Obsidian/PKM')
+  end,
   dependencies = {
     'nvim-lua/plenary.nvim',
     'nvim-treesitter/nvim-treesitter',
