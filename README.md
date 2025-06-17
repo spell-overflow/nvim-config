@@ -56,6 +56,9 @@
 | <leader>lg  | `LazyGit`                            | Open Lazygit                 | 🛏️ LazyGit |
 | <leader>ggd |                                      | Open Git Diff in telescope   | Snacks     |
 | <leader>gb  |                                      | Open Git Branches telescope  | Snacks     |
+| <leader>hi  | Gitsigns preview_hunk_inline         | Preview hunk inline          | Snacks     |
+| <leader>hr  | Gitsigns reset_hunk                  | Reset hunk                   | Snacks     |
+
 
 # 🔍 Find Things
 

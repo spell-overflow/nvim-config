@@ -58,5 +58,7 @@ return {
     vim.keymap.set('n', '<leader>tw', gitsigns.toggle_word_diff, { desc = '[T]oggle git [w]ord diff' })
     vim.keymap.set('n', '<leader>dh', gitsigns.diffthis, { desc = '[D]iff [h]unk' })
     vim.keymap.set('n', '<leader>tn', gitsigns.toggle_numhl, { desc = '[T]oggle git [n]umber highlights' })
+    vim.keymap.set('n', '<leader>hi', gitsigns.preview_hunk_inline, { desc = 'Preview [h]unk [i]nline' })
+    vim.keymap.set('n', '<leader>hr', gitsigns.reset_hunk, { desc = '[R]eset [h]unk' })
   end,
 }
