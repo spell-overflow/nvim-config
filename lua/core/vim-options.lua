@@ -17,10 +17,11 @@ vim.opt.cursorlineopt = 'number'
 vim.opt.showmode = false
 
 -- Display lines as one long line (default: true)
-vim.o.wrap = false
+vim.wo.wrap = true
+vim.wo.linebreak = true
 
 -- Companion to wrap, don't split words (default: false)
-vim.o.linebreak = true
+vim.o.linebreak = false
 
 -- Save undo history
 vim.opt.undofile = true
