@@ -81,8 +81,8 @@
 | m<sign>     |         | Set mark <sign>                | Vim           |
 | <S-k>       |         | Get LSP-Info of hovered word   | LSP           |
 | <leader>tt  |         | Show Telescope Todos           | todo-comments |
-| <leader>xx  |         | Toggle Diagnostics             | Trouble       |
-| <leader>xX  |         | Buffer Diagnostics             | Trouble       |
+| <leader>xX  |         | Toggle Diagnostics             | Trouble       |
+| <leader>xx  |         | Buffer Diagnostics             | Trouble       |
 | <leader>cs  |         | Symol Buffers                  | Trouble       |
 | <leader>cl  |         | LSP Definitions/references...  | Trouble       |
 | <leader>xL  |         | Location List                  | Trouble       |
