@@ -61,7 +61,7 @@ return {
     -- Setup lualine
     require('lualine').setup({
       options = {
-        theme = 'catppuccin',
+        theme = 'auto',
         icons_enabled = true,
         section_separators = { left = '', right = '' },
         component_separators = { left = '', right = '' },
