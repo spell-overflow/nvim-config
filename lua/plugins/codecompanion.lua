@@ -28,7 +28,8 @@ return {
             picker = 'telescope',
             ---Enable detailed logging for history extension
             enable_logging = false,
-            dir_to_save = vim.fn.stdpath('data') .. '/codecompanion-history',
+            -- dir_to_save = vim.fn.stdpath('data') .. '/codecompanion-history',
+            dir_to_save = vim.fn.expand('$HOME') .. '/.config/nvim/codecompanion-history',
             -- Save all chats by default
             auto_save = true,
             -- Keymap to save the current chat manually
