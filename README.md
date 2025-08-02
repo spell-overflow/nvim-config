@@ -113,6 +113,7 @@ Self-update references, they can be pinned (for files and buffers) or watched (f
 | 'n' `gx`   | Nur im Chat!                | Clear Chat             | 👫 CodeCompanion |
 | 'n' `gh`   | Nur im Chat!                | Open Chat History      | 👫 CodeCompanion |
 | <C-.>      |                             | Get AI Autocompletions | 👫 CodeCompanion |
+| <C-j>      |                             | Accept Copilot complet | 🧑‍✈️ Copilot       |
 
 # 🆘 Get Help
 
