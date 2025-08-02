@@ -89,6 +89,10 @@
 | <leader>xQ  |         | Quickfix List                  | Trouble       |
 | <leader>gb  |         | Quickfix List                  | Trouble       |
 | <leader>s"  |         | Telescope Registers            | Trouble       |
+| `<[d>`      |         | Go to prev diagnostic msg      | Trouble       |
+| `<]d>`      |         | Go to next diagnostic msg      | Trouble       |
+| <leader>d   |         | Open floating diagnostic msg   | Trouble       |
+| <leader>ll  |         | Open diagnostic (Lock-) list   | Trouble       |
 
 # 💄 Change Appearance
 
