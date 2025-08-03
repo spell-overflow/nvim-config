@@ -211,7 +211,6 @@ return {
       --
       -- But for many setups, the LSP (`ts_ls`) will work just fine
       ts_ls = {},
-      eslint_d = { filetypes = { 'javascript', 'javascriptreact', 'typescript', 'typescriptreact' } },
       --
       html = { filetypes = { 'html', 'twig', 'hbs' } },
       cssls = {},
